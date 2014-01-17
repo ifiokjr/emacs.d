@@ -30,7 +30,8 @@
 ;; along with GNU Emacs; see the file COPYING.  If not, write to the
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
-
+(setq max-specpdl-size 100)  ; default is 1000, reduce the backtrace level
+(setq debug-on-error t)
 ;;; Code:
 (defvar current-user
       (getenv

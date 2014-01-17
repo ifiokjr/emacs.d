@@ -119,7 +119,7 @@ Will only occur if prelude-whitespace is also enabled."
 (define-key prog-mode-map (kbd "M-\"") (prelude-wrap-with "\""))
 
 ;; disable annoying blink-matching-paren
-(setq blink-matching-paren nil)
+;;(setq blink-matching-paren nil)
 
 ;; diminish keeps the modeline tidy
 (require 'diminish)
@@ -127,7 +127,7 @@ Will only occur if prelude-whitespace is also enabled."
 ;; meaningful names for buffers with the same name
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
-(setq uniquify-separator "/")
+(setq uniquify-separator ":")
 (setq uniquify-after-kill-buffer-p t)    ; rename after killing uniquified
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
